@@ -11,7 +11,43 @@
 		270418D32C026EB600CA8976 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270418D22C026EB600CA8976 /* ContentView.swift */; };
 		270418D52C026EB700CA8976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270418D42C026EB700CA8976 /* Assets.xcassets */; };
 		270418D82C026EB700CA8976 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270418D72C026EB700CA8976 /* Preview Assets.xcassets */; };
+		270418E52C026F2A00CA8976 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270418E42C026F2A00CA8976 /* WidgetKit.framework */; };
+		270418E72C026F2A00CA8976 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270418E62C026F2A00CA8976 /* SwiftUI.framework */; };
+		270418EA2C026F2A00CA8976 /* Server_MonitoringBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270418E92C026F2A00CA8976 /* Server_MonitoringBundle.swift */; };
+		270418EC2C026F2A00CA8976 /* Server_Monitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270418EB2C026F2A00CA8976 /* Server_Monitoring.swift */; };
+		270418EE2C026F2B00CA8976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270418ED2C026F2B00CA8976 /* Assets.xcassets */; };
+		270418F22C026F2B00CA8976 /* Server MonitoringExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 270418E22C026F2A00CA8976 /* Server MonitoringExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		270418FB2C0280BD00CA8976 /* ServersStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270418FA2C0280BD00CA8976 /* ServersStats.swift */; };
+		270418FD2C028A4900CA8976 /* ServersStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270418FA2C0280BD00CA8976 /* ServersStats.swift */; };
+		270418FF2C028CEB00CA8976 /* GetServerStatsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270418FE2C028CEB00CA8976 /* GetServerStatsProvider.swift */; };
+		270419002C028CEB00CA8976 /* GetServerStatsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270418FE2C028CEB00CA8976 /* GetServerStatsProvider.swift */; };
+		270419032C028FF700CA8976 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 270419022C028FF700CA8976 /* Alamofire */; };
+		270419052C0291FE00CA8976 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 270419042C0291FE00CA8976 /* Alamofire */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		270418F02C026F2B00CA8976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270418C52C026EB600CA8976 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270418E12C026F2A00CA8976;
+			remoteInfo = "Server MonitoringExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		270418F62C026F2B00CA8976 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				270418F22C026F2B00CA8976 /* Server MonitoringExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		270418CD2C026EB600CA8976 /* ServerMonitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerMonitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +55,15 @@
 		270418D22C026EB600CA8976 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		270418D42C026EB700CA8976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270418D72C026EB700CA8976 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		270418E22C026F2A00CA8976 /* Server MonitoringExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Server MonitoringExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		270418E42C026F2A00CA8976 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		270418E62C026F2A00CA8976 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		270418E92C026F2A00CA8976 /* Server_MonitoringBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server_MonitoringBundle.swift; sourceTree = "<group>"; };
+		270418EB2C026F2A00CA8976 /* Server_Monitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server_Monitoring.swift; sourceTree = "<group>"; };
+		270418ED2C026F2B00CA8976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		270418EF2C026F2B00CA8976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270418FA2C0280BD00CA8976 /* ServersStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersStats.swift; sourceTree = "<group>"; };
+		270418FE2C028CEB00CA8976 /* GetServerStatsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerStatsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +71,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270419032C028FF700CA8976 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270418DF2C026F2A00CA8976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270419052C0291FE00CA8976 /* Alamofire in Frameworks */,
+				270418E72C026F2A00CA8976 /* SwiftUI.framework in Frameworks */,
+				270418E52C026F2A00CA8976 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +91,10 @@
 		270418C42C026EB600CA8976 = {
 			isa = PBXGroup;
 			children = (
+				270418FC2C0289FF00CA8976 /* Shared */,
 				270418CF2C026EB600CA8976 /* ServerMonitoring */,
+				270418E82C026F2A00CA8976 /* Server Monitoring */,
+				270418E32C026F2A00CA8976 /* Frameworks */,
 				270418CE2C026EB600CA8976 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				270418CD2C026EB600CA8976 /* ServerMonitoring.app */,
+				270418E22C026F2A00CA8976 /* Server MonitoringExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +127,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		270418E32C026F2A00CA8976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				270418E42C026F2A00CA8976 /* WidgetKit.framework */,
+				270418E62C026F2A00CA8976 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		270418E82C026F2A00CA8976 /* Server Monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				270418E92C026F2A00CA8976 /* Server_MonitoringBundle.swift */,
+				270418EB2C026F2A00CA8976 /* Server_Monitoring.swift */,
+				270418ED2C026F2B00CA8976 /* Assets.xcassets */,
+				270418EF2C026F2B00CA8976 /* Info.plist */,
+			);
+			path = "Server Monitoring";
+			sourceTree = "<group>";
+		};
+		270418FC2C0289FF00CA8976 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				270418FA2C0280BD00CA8976 /* ServersStats.swift */,
+				270418FE2C028CEB00CA8976 /* GetServerStatsProvider.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +166,40 @@
 				270418C92C026EB600CA8976 /* Sources */,
 				270418CA2C026EB600CA8976 /* Frameworks */,
 				270418CB2C026EB600CA8976 /* Resources */,
+				270418F62C026F2B00CA8976 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				270418F12C026F2B00CA8976 /* PBXTargetDependency */,
+			);
+			name = ServerMonitoring;
+			packageProductDependencies = (
+				270419022C028FF700CA8976 /* Alamofire */,
+			);
+			productName = ServerMonitoring;
+			productReference = 270418CD2C026EB600CA8976 /* ServerMonitoring.app */;
+			productType = "com.apple.product-type.application";
+		};
+		270418E12C026F2A00CA8976 /* Server MonitoringExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270418F32C026F2B00CA8976 /* Build configuration list for PBXNativeTarget "Server MonitoringExtension" */;
+			buildPhases = (
+				270418DE2C026F2A00CA8976 /* Sources */,
+				270418DF2C026F2A00CA8976 /* Frameworks */,
+				270418E02C026F2A00CA8976 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ServerMonitoring;
-			productName = ServerMonitoring;
-			productReference = 270418CD2C026EB600CA8976 /* ServerMonitoring.app */;
-			productType = "com.apple.product-type.application";
+			name = "Server MonitoringExtension";
+			packageProductDependencies = (
+				270419042C0291FE00CA8976 /* Alamofire */,
+			);
+			productName = "Server MonitoringExtension";
+			productReference = 270418E22C026F2A00CA8976 /* Server MonitoringExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +214,9 @@
 					270418CC2C026EB600CA8976 = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					270418E12C026F2A00CA8976 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 270418C82C026EB600CA8976 /* Build configuration list for PBXProject "ServerMonitoring" */;
@@ -111,11 +228,15 @@
 				Base,
 			);
 			mainGroup = 270418C42C026EB600CA8976;
+			packageReferences = (
+				270419012C028ED300CA8976 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 270418CE2C026EB600CA8976 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				270418CC2C026EB600CA8976 /* ServerMonitoring */,
+				270418E12C026F2A00CA8976 /* Server MonitoringExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +251,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		270418E02C026F2A00CA8976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270418EE2C026F2B00CA8976 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +266,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270418FF2C028CEB00CA8976 /* GetServerStatsProvider.swift in Sources */,
+				270418FB2C0280BD00CA8976 /* ServersStats.swift in Sources */,
 				270418D32C026EB600CA8976 /* ContentView.swift in Sources */,
 				270418D12C026EB600CA8976 /* ServerMonitoringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		270418DE2C026F2A00CA8976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270419002C028CEB00CA8976 /* GetServerStatsProvider.swift in Sources */,
+				270418FD2C028A4900CA8976 /* ServersStats.swift in Sources */,
+				270418EC2C026F2A00CA8976 /* Server_Monitoring.swift in Sources */,
+				270418EA2C026F2A00CA8976 /* Server_MonitoringBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		270418F12C026F2B00CA8976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270418E12C026F2A00CA8976 /* Server MonitoringExtension */;
+			targetProxy = 270418F02C026F2B00CA8976 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		270418D92C026EB700CA8976 /* Debug */ = {
@@ -267,6 +417,7 @@
 		270418DC2C026EB700CA8976 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,6 +431,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,15 +439,20 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MrProFox.ServerMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		270418DD2C026EB700CA8976 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +474,77 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MrProFox.ServerMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		270418F42C026F2B00CA8976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TAXVQDQJU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Server Monitoring/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Server Monitoring";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MrProFox.ServerMonitoring.Server-Monitoring";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		270418F52C026F2B00CA8976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TAXVQDQJU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Server Monitoring/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Server Monitoring";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MrProFox.ServerMonitoring.Server-Monitoring";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -343,7 +569,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		270418F32C026F2B00CA8976 /* Build configuration list for PBXNativeTarget "Server MonitoringExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270418F42C026F2B00CA8976 /* Debug */,
+				270418F52C026F2B00CA8976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		270419012C028ED300CA8976 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		270419022C028FF700CA8976 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 270419012C028ED300CA8976 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		270419042C0291FE00CA8976 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 270419012C028ED300CA8976 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 270418C52C026EB600CA8976 /* Project object */;
 }
