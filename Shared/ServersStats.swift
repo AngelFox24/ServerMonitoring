@@ -23,7 +23,7 @@ class ServerStats: Decodable {
         }
     
     static func getDummy() -> ServerStats {
-        return ServerStats(cpu_usage: 0.0, disk_usage: 0.0, memory_usage: 0.0, temperature: 0.0)
+        return ServerStats(cpu_usage: 0, disk_usage: 0, memory_usage: 0, temperature: 0)
     }
     private enum CodingKeys: String, CodingKey {
         case cpu_usage
