@@ -1,4 +1,4 @@
-# FlorShop API Rest
+# ServerMonitoring
 
 ServerMonitoring es una app que posee un widget para iOS que sirve para monitorear un servidor local.
 
