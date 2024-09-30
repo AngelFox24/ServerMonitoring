@@ -20,7 +20,7 @@ ServerMonitoring es una app que posee un widget para iOS que sirve para monitore
 
 ## Imagen de Muestra
 
-![Ejemplo](Captura.png)
+![Ejemplo](Captura.jpeg)
 
 ### Sobre Pull Request al proyecto
 
